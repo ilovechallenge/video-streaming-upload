@@ -1,0 +1,212 @@
+@mixin flexDiv {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  
+  
+  ::cue {
+    color: white;
+    font-family: 'Klee One', cursive;
+    font-weight: bold; 
+    background-color: black;
+  }
+  
+  // font-family: 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; 
+  
+  
+  ::cue(ruby) { 
+    background-color: black;
+    font-size: 2rem; 
+  }
+  
+  h2 {
+    align-self: center;
+  }
+  
+  button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+  }
+  
+  input[type='file'] {
+    display: none;
+  }
+  
+  
+  th {
+    div {
+      font-size: 1.3rem;
+    }
+  }
+  table {
+    thead {
+      tr {
+        th {
+          background-color: rgb(249, 249, 249, 0.7) !important;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          background-color: rgb(249, 249, 249, 0.7) !important;
+        }
+      }
+    }
+  }
+  
+  #fileLabel {
+    height: 3rem;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 2rem;
+    text-align: center;
+  }
+  
+  #captionFileLabel {
+    height: 3rem;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 2rem;
+    text-align: center;
+  }
+  
+  .upload-container {
+    width: 35vw;
+    height: 100vh;
+    margin: 5rem auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  
+    .upload-title {
+      @include flexDiv();
+      padding: 1rem;
+      label {
+        font-size: 1rem;
+        width: 28%;
+      }
+      input {
+        width: 72%;
+      }
+      div {
+        display: inline-block;
+        width: 72%;
+        div {
+          width: 100%
+        }
+      }
+      .upload-word {
+        width: unset;
+        margin-right: 10px;
+        div {
+          width: 80%;
+        }
+      }
+      .upload-word-list {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    
+    .upload-content {
+      @include flexDiv();
+      padding: 1rem;
+      label {
+        font-size: 1rem;
+        width: 28%;
+      }
+      textarea {
+        width: 72%;
+      }
+    }
+  
+    .upload-file {
+      @include flexDiv();
+      padding: 1rem;
+      height: 6rem;
+      input {
+        width: 65%;
+      }
+    }
+    .upload-button {
+      @include flexDiv();
+      justify-content: flex-end;
+      align-self: flex-end;
+      height: 3rem;
+      padding: 3rem 1rem;
+      button {
+        width: 14rem;
+        background-color: green;
+      }
+    }
+  }
+    .custom-file-input::-webkit-file-upload-button {
+          visibility: hidden; 
+    }
+  
+    #side-bar {
+      background-color: #c8c8c8;
+      h2 {
+        font-size: 1.5rem;
+      }
+      span {
+        font-size: 1rem;
+      }
+    }
+  
+    .custom-table {
+      width: 100%;
+      padding: 2rem;
+      background-color: rgb(249, 249, 249, 0.7) !important;
+      div {
+        background-color: rgb(249, 249, 249, 0.7) !important;
+      }
+    }
+  
+  
+    .unit-manage {
+      width: 100%;
+      height: 100vh;
+      padding: 3rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h2 {
+        margin-bottom: 3rem;
+        align-self: "unset"
+      }
+      .select-unit {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1rem;
+        .select-sub {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 3rem;
+          span {
+            font-size: 1.3rem;
+            margin-right: 1rem;
+          }
+          div {
+            width: 13rem;
+          }
+        }
+      }
+    }
